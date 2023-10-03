@@ -43,9 +43,10 @@ model = encoder.fit(df)
 df_encoded = model.transform(df)
 
 # Show the resulting DataFrame
-df_encoded.show()
+df_final = df_encoded.select("customer_ID","day_encoded", "month_encoded", "year_encoded", "amount", "fee", "loan_status", "term_encoded", "annual_income")
+df_final.show()
 output_path = "/tmp/output.parquet"
-df_encoded = df_encoded.coalesce(1)  # Reduce to a single partition
-df_encoded.write.parquet(output_path, mode="overwrite")
+df_final = df_final.coalesce(1)  # Reduce to a single partition
+df_final.write.parquet(output_path, mode="overwrite")
 # Stop the Spark session
 spark.stop()
