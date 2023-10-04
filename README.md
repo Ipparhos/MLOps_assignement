@@ -14,10 +14,10 @@ following command while docker is still up. <br />
    &emsp; $ docker exec -it spark-master /bin/bash <br />
 
  -Here you will need to install numpy library to execute spark_job/py
-     $ pip install numpy
+    &emsp; $ pip install numpy
   -This will log us in the container's bash <br />
-      $ cd /app/local_code_directory <br />
-      $ spark-submit --master spark://spark-master:7077 spark_job.py  <br />
+    &emsp; $ cd /app/local_code_directory <br />
+    &emsp; $ spark-submit --master spark://spark-master:7077 spark_job.py  <br />
 
       
   The last command runs the code in spark_job that performs the feature <br />
