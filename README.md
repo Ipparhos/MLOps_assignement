@@ -5,7 +5,8 @@ feature engineering
    &emsp; $ docker compose up
     
 -Then we can run some tests for our code in the Jupyter environment which is <br />
-more interactive. To access Jupyter we open our port localhost:8888.
+more interactive.<br />
+-To access Jupyter we open our port localhost:8888.
 -There we have to upload from our local files the notebook.ipynb and cvas_data.csv.
 
 -To run our final code which performs the feature engineering we run the 
