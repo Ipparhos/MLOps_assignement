@@ -13,7 +13,7 @@ following command while docker is still up. <br />
    &emsp; $ docker cp /local_code_directory spark-master:/app <br />
    &emsp; $ docker exec -it spark-master /bin/bash <br />
 
- -Here you will need to install numpy library to execute spark_job/py  <br /
+ -Here you will need to install numpy library to execute spark_job/py  <br />
     &emsp; $ pip install numpy
   -This will log us in the container's bash <br />
     &emsp; $ cd /app/local_code_directory <br />
