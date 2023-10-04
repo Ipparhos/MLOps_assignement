@@ -13,12 +13,15 @@ following command while docker is still up. <br />
    &emsp; $ docker cp /local_code_directory spark-master:/app <br />
    &emsp; $ docker exec -it spark-master /bin/bash <br />
 
- -Here you will need to install numpy library to execute spark_job/py
+ -Here you will need to install numpy library to execute spark_job/py  <br /
     &emsp; $ pip install numpy
   -This will log us in the container's bash <br />
     &emsp; $ cd /app/local_code_directory <br />
     &emsp; $ spark-submit --master spark://spark-master:7077 spark_job.py  <br />
-
-      
-  The last command runs the code in spark_job that performs the feature <br />
+    
+The last command runs the code in spark_job that performs the feature <br />
   engineering and saves the results in parquet format.
+
+-Then we locate the container that the output file is saved and download it locally with the following command. <br />
+    &emsp; $ docker cp <container_id_or_name>: /tmp/output .
+      
