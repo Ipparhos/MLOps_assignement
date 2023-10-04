@@ -10,7 +10,7 @@ more interactive. To access Jupyter we open our port localhost:8888.
 
 -To run our final code which performs the feature engineering we run the 
 following command while docker is still up.
-    $ docker cp /local_code_directory spark-master:/app
+    $ docker cp /local_code_directory spark-master:/app /n
     $ docker exec -it spark-master /bin/bash
 
  -Here you will need to install numpy library to execute spark_job/py
