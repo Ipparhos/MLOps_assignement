@@ -2,7 +2,7 @@
 feature engineering
 
 -First, we run the following command on the terminal to get the docker container up <br />
-    $ docker compose up
+   &emsp; $ docker compose up
     
 -Then we can run some tests for our code in the Jupyter environment which is <br />
 more interactive. To access Jupyter we open our port localhost:8888.
@@ -10,8 +10,8 @@ more interactive. To access Jupyter we open our port localhost:8888.
 
 -To run our final code which performs the feature engineering we run the 
 following command while docker is still up. <br />
-    $ docker cp /local_code_directory spark-master:/app <br />
-    $ docker exec -it spark-master /bin/bash <br />
+   &emsp; $ docker cp /local_code_directory spark-master:/app <br />
+   &emsp; $ docker exec -it spark-master /bin/bash <br />
 
  -Here you will need to install numpy library to execute spark_job/py
      $ pip install numpy
